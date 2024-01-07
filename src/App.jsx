@@ -1,10 +1,13 @@
+import Card from './components/card/Card';
 import Cards from './components/cards/Cards';
 import Main from './components/main/Main';
 
 const App = () => {
 	return (
 		<Main>
-			<Cards>1 CARD</Cards>
+			<Cards>
+				<Card />
+			</Cards>
 		</Main>
 	);
 };
