@@ -18,10 +18,13 @@ const StyledImage = styled.img`
 
 const StyledName = styled.h3`
 	color: #fff;
+	margin: 0px;
 `;
 
 const StyledVerified = styled.h3`
 	color: #a1a1a1;
+	margin: 0px;
+	font-size: 13px;
 `;
 
 const StyledTitle = styled.h2`
