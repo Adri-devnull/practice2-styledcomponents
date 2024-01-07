@@ -17,6 +17,8 @@ const Cards = () => {
 					$borderColor={card.$borderColor}
 					$textColor={card.$textColor}
 					$titleColor={card.$titleColor}
+					$row={card.$row}
+					$column={card.$column}
 				/>
 			))}
 		</StyledCards>

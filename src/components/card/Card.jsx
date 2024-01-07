@@ -17,21 +17,25 @@ const Card = ({
 	$bgcolor,
 	$borderColor,
 	$textColor,
-	$titleColor
+	$titleColor,
+	$row,
+	$column
 }) => {
 	return (
-		<StyledCard $bgcolor={$bgcolor}>
+		<StyledCard $bgcolor={$bgcolor} $row={$row} $column={$column}>
 			<StyledCardHeader>
 				<div>
-					<StyledImage src={url} />
+					<StyledImage $borderColor={$borderColor} src={url} />
 				</div>
 				<div>
-					<StyledName>{name}</StyledName>
+					<StyledName $titleColor={$titleColor}>{name}</StyledName>
 					<StyledVerified>{verified}</StyledVerified>
 				</div>
 			</StyledCardHeader>
-			<StyledTitle>{title}</StyledTitle>
-			<StyledInformation>{information}</StyledInformation>
+			<StyledTitle $titleColor={$titleColor}>{title}</StyledTitle>
+			<StyledInformation $textColor={$textColor}>
+				{information}
+			</StyledInformation>
 		</StyledCard>
 	);
 };
