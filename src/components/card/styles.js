@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 const StyledCard = styled.div`
-	background-color: #a775f1;
 	padding: 30px;
 	font-family: 'Barlow Semi Condensed', sans-serif;
 	background-color: ${({ $bgcolor }) => $bgcolor};
@@ -48,7 +47,7 @@ const StyledTitle = styled.h2`
 `;
 
 const StyledInformation = styled.p`
-	font-size: 13px;
+	font-size: 16px;
 	color: ${({ $textColor }) => $textColor};
 	line-height: 1.7em;
 `;
