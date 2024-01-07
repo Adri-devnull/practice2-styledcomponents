@@ -8,12 +8,22 @@ import {
 	StyledVerified
 } from './styles';
 
-const Card = ({ name, verified, title, information }) => {
+const Card = ({
+	name,
+	url,
+	verified,
+	title,
+	information,
+	$bgcolor,
+	$borderColor,
+	$textColor,
+	$titleColor
+}) => {
 	return (
-		<StyledCard>
+		<StyledCard $bgcolor={$bgcolor}>
 			<StyledCardHeader>
 				<div>
-					<StyledImage src='./public/assets/images/image-daniel.jpg' />
+					<StyledImage src={url} />
 				</div>
 				<div>
 					<StyledName>{name}</StyledName>
